@@ -20,3 +20,13 @@ Route::get('/', function () {
 
 Route::get('/siswa', 'App\Http\Controllers\SiswaController@index');
 Route::post('/create/siswa', 'App\Http\Controllers\SiswaController@create');
+
+
+
+//untuk edit
+Route::get('/siswa/{id}/edit', 'App\Http\Controllers\SiswaController@edit');
+Route::post('/siswa/{id}/update', 'App\Http\Controllers\SiswaController@update');
+
+
+//untuk delete
+Route::get('/siswa/{id}/delete', 'App\Http\Controllers\SiswaController@delete');
